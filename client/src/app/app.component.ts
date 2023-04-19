@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  checked = true;
-  modCheck(){
-    this.checked=!this.checked;
-  }
+  
 }
