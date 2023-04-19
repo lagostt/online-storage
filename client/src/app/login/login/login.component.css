@@ -1,10 +1,36 @@
 
 .form-card{
-
-    background-color: antiquewhite;
+    padding-top:3vh ;
+    padding-bottom: 3vh;
+    position:fixed;
+    background-color: #FFD966;
     margin-left:30vw;
+    width: 40vw;
     margin-right:30vw;
     text-align: center;
     margin-top:10vh ;
     max-height: 100%;
 }
+
+.form-card input {
+    width: 100%;
+    padding: 2vh 1vw;
+    box-sizing: border-box;
+    border: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 2px solid;
+    outline: none;
+}
+
+ .form-card input:focus {
+    
+    border-bottom: 2px solid;
+    border-bottom-color: #7bdf7b;
+}
+
+.form-button {
+    width: 10vw;
+}
+
+

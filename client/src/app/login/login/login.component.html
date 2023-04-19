@@ -6,15 +6,15 @@
 
 	<mat-card-content>
 
+		<mat-form-field >
+			<input  placeholder="email">
+		</mat-form-field>
+	<br/>
 		<mat-form-field>
-			<input matInput placeholder="email">
+			<input  placeholder="password">
 		</mat-form-field><br/>
-
-		<mat-form-field>
-			<input matInput placeholder="password">
-		</mat-form-field><br/>
-		<button mat-raised-button color="primary" style="margin-right:5px;">login</button>
-		<button mat-raised-button color="primary" >register</button>
+		<button mat-raised-button color="primary" ngClass="form-button" style="margin-right:5px;">login</button>
+		<button mat-raised-button color="primary" ngClass="form-button">register</button>
 
 	</mat-card-content>
 </mat-card>
