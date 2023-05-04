@@ -7,7 +7,7 @@ import { Component,OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  userMenuIsOpen: boolean = false;
+  userMenuIsOpen: boolean = true;
   
   handleUserMenu(){
     this.userMenuIsOpen = !this.userMenuIsOpen; 
