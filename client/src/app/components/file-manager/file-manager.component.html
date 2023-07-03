@@ -1,13 +1,11 @@
 <div class="flex flex-col h-screen w-screen">
-<nav class="flex-item-container  bg-transparent border-gray-200 dark:bg-gray-900 z-30"
-style="height: 10%;">
-    <div class="max-w-screen-xl flex flex-row-reverse mx-auto py-4">
-     
-      <div class="flex flex-col w-44 items-end relative" >
-<img id="avatarButton" type="button" (click)="handleUserMenu()"  class="w-10 h-10 rounded-full cursor-pointer" src="assets/images/user.jpg" alt="User dropdown">
+<nav class="z-30 h-[10%] bg-[#abdcff]">
+    <div class="max-w-screen-xl flex flex-row pl-[13.3%] md:pl-[7%] 2xl:pl-[3.4%] pt-[0.5%]  ">
+      <div class="flex flex-col  relative 2xl:my-[0%]  2xl:ml-[0%] 2xl:w-[8.16%] md:w-[23.75%] w-[47.5%]">
+<img id="avatarButton" type="button" (click)="handleUserMenu()"  class="w-[50%] cursor-pointer" src="assets/images/menu.png" alt="User dropdown">
 
 <!-- Dropdown menu -->
-<div  [ngClass]="{'hidden':userMenuIsOpen}" class="absolute  right-0 top-full z-40 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+<div  [ngClass]="{'hidden':userMenuIsOpen}" class="absolute  left-0 top-full z-40 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
     <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
       <div>Ali argan </div>
       <div class="font-medium truncate">ali.argan@yahoo.fr</div>
@@ -31,11 +29,15 @@ style="height: 10%;">
 </div>
     </div>
   </nav>
-  <div class=" grid grid-cols-2 gap-4 max-w-full bg-green-300 z-10 overflow-y-auto "
-  style="height: 90%; padding:0.5%">
+  <div class="flex flex-wrap gap-y-[2%] gap-x-[1%]  max-w-full z-10 overflow-y-auto content-start h-[90%] pb-[1%] 2xl:pt-[1%] pt-[10%] px-[1%]">
     
-      <div *ngFor="let item of items" class="  bg-white " style="height: 150;">
-        <h1>{{item}}</h1>
+    <div  class="   h-[15%] w-[47.5%] md:w-[23.75%] 2xl:w-[8.16%] flex flex-col justify-center 2xl:my-[0%] my-[5%] ">
+      <img src="assets/images/add.png" class="w-[50%] mx-[25%] ">
+      <h1 class="text-center text-[white] text-[90%]">Add</h1>  
+    </div>
+      <div *ngFor="let item of items" class=" 2xl:my-[0%]  my-[5%] h-[15%] 2xl:w-[8.16%] md:w-[23.75%] w-[47.5%] flex flex-col justify-center ">
+        <img src="assets/images/folder.png" class="w-[50%] mx-[25%] ">
+        <h1 class="text-center text-[white] text-[90%]">{{item}}</h1>  
       </div>
     
   </div>
