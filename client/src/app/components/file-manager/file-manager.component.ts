@@ -8,7 +8,13 @@ import { OnInit } from '@angular/core';
 export class FileManagerComponent implements OnInit {
 
   userMenuIsOpen: boolean = true;
-  items:Array<String>= Array.from(Array(100).keys()).map(x => 'item'+ x);
+  
+  fileImgUrl:String='assets/images/file.png';
+  dirImgUrl:String='assets/images/folder.png';
+
+  items:{ [key: string]: String }[]= Array.from(Array(100).keys()).
+                   map(x => ({type: x%3==0?'file':'folder', name:'element'+x }));
+
   handleUserMenu(){
     this.userMenuIsOpen = !this.userMenuIsOpen; 
   }

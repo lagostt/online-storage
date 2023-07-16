@@ -36,8 +36,8 @@
       <h1 class="text-center text-[white] text-[90%]">Add</h1>  
     </div>
       <div *ngFor="let item of items" class=" 2xl:my-[0%]  my-[5%] h-[15%] 2xl:w-[8.16%] md:w-[23.75%] w-[47.5%] flex flex-col justify-center ">
-        <img src="assets/images/folder.png" class="w-[50%] mx-[25%] ">
-        <h1 class="text-center text-[white] text-[90%]">{{item}}</h1>  
+        <img [src]="item['type']=='file'?fileImgUrl:dirImgUrl" class="w-[50%] mx-[25%] ">
+        <h1 class="text-center text-[white] text-[90%]">{{item['name']}}</h1>  
       </div>
     
   </div>
